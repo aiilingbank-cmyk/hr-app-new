@@ -1,5 +1,0 @@
-git pull origin main
-git rm .github/workflows/static.yml
-git commit -m "delete static.yml"
-git push origin main
-
