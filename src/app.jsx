@@ -412,10 +412,10 @@ function DashboardModule({ employees, branchMap, shiftMap, records, leaveReqs })
     return out;
   },[records, from, to, employees, branchMap, shiftMap]);
 
-  const filtered = useMemo(()=> calcRows
-    .filter(r=> emp==="ทั้งหมด" or r.employee===emp)
-    .filter(r=> branch==="ทั้งหมด" or r.branch===branch)
-  ,[calcRows, emp, branch]);
+  const filtered = useMemo(() => calcRows
+  .filter(r => emp === "ทั้งหมด" || r.employee === emp)
+  .filter(r => branch === "ทั้งหมด" || r.branch === branch)
+, [calcRows, emp, branch]);
 
   const dailyAgg = useMemo(()=>{
     const map={};
